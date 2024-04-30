@@ -17,7 +17,7 @@ public class Conversor {
 			temperatura = input.next().toUpperCase();
 			System.out.println("Digite a temperatura inicial: ");
 			temperaturaInicial = input.nextDouble();
-			System.out.println("Resultado " + conversor(temperatura, temperaturaInicial));
+			System.out.println("Resultado: " + conversor(temperatura, temperaturaInicial));
 			continuar = verificarNovaOperacao();
 
 		} while (continuar);
@@ -43,7 +43,7 @@ public class Conversor {
 
 	public static boolean verificarNovaOperacao() {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Deseja realizar uma nova operação (S/N)?");
+		System.out.println("Deseja realizar uma nova operação (S / N)?");
 		return !input.nextLine().toUpperCase(Locale.ROOT).equals("N");
 
 	}
